@@ -12,14 +12,14 @@ namespace MovieServer.Controllers.AddData
             this.csvService = csvService;
         }
 
-        [HttpPost("AddGenomeScores")]
-        public IActionResult AddGenomeScores()
-        {
-            DateTime start = DateTime.Now;
-            csvService.AddGenomeScoreEntity();
-            DateTime end = DateTime.Now;
-            return Ok(start-end);
-        }
+        //[HttpPost("AddGenomeScores")]
+        //public IActionResult AddGenomeScores()
+        //{
+        //    DateTime start = DateTime.Now;
+        //    csvService.AddGenomeScoreEntity();
+        //    DateTime end = DateTime.Now;
+        //    return Ok(start-end);
+        //}
 
         [HttpPost("AddRatings")]
         public IActionResult AddRatings(int part) {
